@@ -15,6 +15,9 @@
 		3BF5B44F24B1CAE30038A77F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B44E24B1CAE30038A77F /* main.m */; };
 		3BF5B45C24B1CC6C0038A77F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B45B24B1CC6C0038A77F /* BaseViewController.m */; };
 		3BF5B45F24B1CC800038A77F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B45E24B1CC800038A77F /* MainViewController.m */; };
+		3BF5B46224B1D06B0038A77F /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B46124B1D06B0038A77F /* ThreadViewController.m */; };
+		3BF5B46524B1D0750038A77F /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B46424B1D0750038A77F /* GCDViewController.m */; };
+		3BF5B46824B1D0850038A77F /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B46724B1D0850038A77F /* OperationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		3BF5B45B24B1CC6C0038A77F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		3BF5B45D24B1CC800038A77F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3BF5B45E24B1CC800038A77F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3BF5B46024B1D06B0038A77F /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		3BF5B46124B1D06B0038A77F /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		3BF5B46324B1D0750038A77F /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		3BF5B46424B1D0750038A77F /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		3BF5B46624B1D0850038A77F /* OperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
+		3BF5B46724B1D0850038A77F /* OperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,12 @@
 				3BF5B45B24B1CC6C0038A77F /* BaseViewController.m */,
 				3BF5B45D24B1CC800038A77F /* MainViewController.h */,
 				3BF5B45E24B1CC800038A77F /* MainViewController.m */,
+				3BF5B46024B1D06B0038A77F /* ThreadViewController.h */,
+				3BF5B46124B1D06B0038A77F /* ThreadViewController.m */,
+				3BF5B46324B1D0750038A77F /* GCDViewController.h */,
+				3BF5B46424B1D0750038A77F /* GCDViewController.m */,
+				3BF5B46624B1D0850038A77F /* OperationViewController.h */,
+				3BF5B46724B1D0850038A77F /* OperationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,9 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF5B46224B1D06B0038A77F /* ThreadViewController.m in Sources */,
 				3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */,
 				3BF5B45C24B1CC6C0038A77F /* BaseViewController.m in Sources */,
 				3BF5B44F24B1CAE30038A77F /* main.m in Sources */,
+				3BF5B46824B1D0850038A77F /* OperationViewController.m in Sources */,
+				3BF5B46524B1D0750038A77F /* GCDViewController.m in Sources */,
 				3BF5B45F24B1CC800038A77F /* MainViewController.m in Sources */,
 				3BF5B44124B1CAE00038A77F /* SceneDelegate.m in Sources */,
 			);

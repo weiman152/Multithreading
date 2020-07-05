@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
 
+/// 从StoryBoard创建VC
++(instancetype)instance;
+
+-(void)pushVC: (BaseViewController *)vc;
+
 @end
 
 NS_ASSUME_NONNULL_END

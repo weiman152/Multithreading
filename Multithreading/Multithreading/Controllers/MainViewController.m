@@ -7,6 +7,9 @@
 //
 
 #import "MainViewController.h"
+#import "ThreadViewController.h"
+#import "GCDViewController.h"
+#import "OperationViewController.h"
 
 @interface MainViewController ()
 
@@ -17,6 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+}
+
+- (IBAction)NSThreadTest:(id)sender {
+    ThreadViewController * vc = [ThreadViewController instance];
+    [self pushVC:vc];
+}
+
+- (IBAction)GCDTest:(id)sender {
+    GCDViewController * vc = [GCDViewController instance];
+    [self pushVC:vc];
+}
+
+
+- (IBAction)NSOperationTest:(id)sender {
+    OperationViewController * vc = [OperationViewController instance];
+    [self pushVC:vc];
 }
 
 
