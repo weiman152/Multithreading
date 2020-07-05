@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseViewController.h
 //  Multithreading
 //
 //  Created by wenhuanhuan on 2020/7/5.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface BaseViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
