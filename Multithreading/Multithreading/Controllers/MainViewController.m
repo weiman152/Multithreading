@@ -10,6 +10,7 @@
 #import "ThreadViewController.h"
 #import "GCDViewController.h"
 #import "OperationViewController.h"
+#import "PThreadViewController.h"
 
 @interface MainViewController ()
 
@@ -37,6 +38,13 @@
     OperationViewController * vc = [OperationViewController instance];
     [self pushVC:vc];
 }
+
+- (IBAction)pThreadTest:(id)sender {
+    PThreadViewController *vc = [PThreadViewController instance];
+    [self pushVC:vc];
+    
+}
+
 
 
 @end

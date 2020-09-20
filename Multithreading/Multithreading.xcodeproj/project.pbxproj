@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE6AC325172FD200EACE6C /* PThreadViewController.m */; };
 		3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B43D24B1CAE00038A77F /* AppDelegate.m */; };
 		3BF5B44124B1CAE00038A77F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B44024B1CAE00038A77F /* SceneDelegate.m */; };
 		3BF5B44724B1CAE00038A77F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF5B44524B1CAE00038A77F /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BDE6AC225172FD200EACE6C /* PThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PThreadViewController.h; sourceTree = "<group>"; };
+		3BDE6AC325172FD200EACE6C /* PThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PThreadViewController.m; sourceTree = "<group>"; };
 		3BF5B43924B1CAE00038A77F /* 多线程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "多线程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF5B43C24B1CAE00038A77F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BF5B43D24B1CAE00038A77F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				3BF5B46424B1D0750038A77F /* GCDViewController.m */,
 				3BF5B46624B1D0850038A77F /* OperationViewController.h */,
 				3BF5B46724B1D0850038A77F /* OperationViewController.m */,
+				3BDE6AC225172FD200EACE6C /* PThreadViewController.h */,
+				3BDE6AC325172FD200EACE6C /* PThreadViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */,
 				3BF5B45C24B1CC6C0038A77F /* BaseViewController.m in Sources */,
 				3BF5B44F24B1CAE30038A77F /* main.m in Sources */,
+				3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */,
 				3BF5B46824B1D0850038A77F /* OperationViewController.m in Sources */,
 				3BF5B46524B1D0750038A77F /* GCDViewController.m in Sources */,
 				3BF5B45F24B1CC800038A77F /* MainViewController.m in Sources */,

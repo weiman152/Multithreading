@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="50" id="YRD-WF-BOQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="NSThread"/>
+                                <state key="normal" title="NSThread(OC)"/>
                                 <connections>
                                     <action selector="NSThreadTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IC1-Ub-frQ"/>
                                 </connections>
@@ -47,7 +47,7 @@
                                 <rect key="frame" x="20" y="218" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="GCD"/>
+                                <state key="normal" title="GCD(C语言)"/>
                                 <connections>
                                     <action selector="GCDTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KIC-K4-ELX"/>
                                 </connections>
@@ -56,15 +56,26 @@
                                 <rect key="frame" x="20" y="288" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="NSOperation"/>
+                                <state key="normal" title="NSOperation(OC)"/>
                                 <connections>
                                     <action selector="NSOperationTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1GO-yB-ANr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLH-93-daw">
+                                <rect key="frame" x="20" y="358" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="pThread(C语言)"/>
+                                <connections>
+                                    <action selector="pThreadTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZA-2P-4hE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="862-ks-Jn3" firstAttribute="trailing" secondItem="MkQ-rN-TkK" secondAttribute="trailing" id="12g-kY-ZRL"/>
+                            <constraint firstItem="CLH-93-daw" firstAttribute="trailing" secondItem="pPg-Sa-80I" secondAttribute="trailing" id="1zh-Qh-al7"/>
+                            <constraint firstItem="CLH-93-daw" firstAttribute="top" secondItem="pPg-Sa-80I" secondAttribute="bottom" constant="20" id="8Sj-bZ-zRE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MkQ-rN-TkK" secondAttribute="trailing" constant="20" id="Ckx-1T-uO4"/>
                             <constraint firstItem="pPg-Sa-80I" firstAttribute="height" secondItem="862-ks-Jn3" secondAttribute="height" id="Mgw-hv-Cuc"/>
                             <constraint firstItem="862-ks-Jn3" firstAttribute="top" secondItem="MkQ-rN-TkK" secondAttribute="bottom" constant="20" id="RmA-Wu-lVN"/>
@@ -75,6 +86,8 @@
                             <constraint firstItem="862-ks-Jn3" firstAttribute="leading" secondItem="MkQ-rN-TkK" secondAttribute="leading" id="qFc-yN-DrQ"/>
                             <constraint firstItem="pPg-Sa-80I" firstAttribute="top" secondItem="862-ks-Jn3" secondAttribute="bottom" constant="20" id="uIT-Ye-8zf"/>
                             <constraint firstItem="pPg-Sa-80I" firstAttribute="leading" secondItem="862-ks-Jn3" secondAttribute="leading" id="w2i-Hu-99A"/>
+                            <constraint firstItem="CLH-93-daw" firstAttribute="leading" secondItem="pPg-Sa-80I" secondAttribute="leading" id="x0W-gN-GRB"/>
+                            <constraint firstItem="CLH-93-daw" firstAttribute="height" secondItem="pPg-Sa-80I" secondAttribute="height" id="xc2-XY-XcT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -113,6 +126,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EzW-b5-jzx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2632" y="110"/>
+        </scene>
+        <!--pThread探索-->
+        <scene sceneID="Ze6-nY-pHP">
+            <objects>
+                <viewController storyboardIdentifier="PThreadViewController" title="pThread探索" id="H2y-SB-Qes" customClass="PThreadViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="obk-gz-929">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LAl-6t-oZJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyc-bN-ue6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3396" y="113"/>
         </scene>
         <!--GCD探索-->
         <scene sceneID="lMd-1D-uEk">
