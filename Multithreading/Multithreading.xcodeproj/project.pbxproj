@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE6AC325172FD200EACE6C /* PThreadViewController.m */; };
+		3BDE6ADB25189DAF00EACE6C /* WMThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE6ADA25189DAF00EACE6C /* WMThread.m */; };
 		3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B43D24B1CAE00038A77F /* AppDelegate.m */; };
 		3BF5B44124B1CAE00038A77F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B44024B1CAE00038A77F /* SceneDelegate.m */; };
 		3BF5B44724B1CAE00038A77F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF5B44524B1CAE00038A77F /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 /* Begin PBXFileReference section */
 		3BDE6AC225172FD200EACE6C /* PThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PThreadViewController.h; sourceTree = "<group>"; };
 		3BDE6AC325172FD200EACE6C /* PThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PThreadViewController.m; sourceTree = "<group>"; };
+		3BDE6AD925189DAF00EACE6C /* WMThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMThread.h; sourceTree = "<group>"; };
+		3BDE6ADA25189DAF00EACE6C /* WMThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMThread.m; sourceTree = "<group>"; };
 		3BF5B43924B1CAE00038A77F /* 多线程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "多线程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF5B43C24B1CAE00038A77F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BF5B43D24B1CAE00038A77F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BDE6AD825189D8E00EACE6C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3BDE6AD925189DAF00EACE6C /* WMThread.h */,
+				3BDE6ADA25189DAF00EACE6C /* WMThread.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		3BF5B43024B1CAE00038A77F = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +88,7 @@
 		3BF5B43B24B1CAE00038A77F /* Multithreading */ = {
 			isa = PBXGroup;
 			children = (
+				3BDE6AD825189D8E00EACE6C /* Tools */,
 				3BF5B45524B1CC4F0038A77F /* Controllers */,
 				3BF5B45924B1CC4F0038A77F /* Models */,
 				3BF5B45624B1CC4F0038A77F /* Views */,
@@ -212,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF5B46224B1D06B0038A77F /* ThreadViewController.m in Sources */,
+				3BDE6ADB25189DAF00EACE6C /* WMThread.m in Sources */,
 				3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */,
 				3BF5B45C24B1CC6C0038A77F /* BaseViewController.m in Sources */,
 				3BF5B44F24B1CAE30038A77F /* main.m in Sources */,

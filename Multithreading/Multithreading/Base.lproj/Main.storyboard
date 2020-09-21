@@ -128,14 +128,82 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN7-i2-P7L">
-                                <rect key="frame" x="20" y="212" width="374" height="44"/>
+                                <rect key="frame" x="20" y="297" width="374" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4VG-gH-64U"/>
                                 </constraints>
-                                <state key="normal" title="当前所在线程的名字"/>
+                                <state key="normal" title="NSThread子类创建线程"/>
                                 <connections>
                                     <action selector="threadNameTest:" destination="DnT-gB-vRK" eventType="touchUpInside" id="Stb-3Z-vSn"/>
+                                    <action selector="wmThreadCreate:" destination="DnT-gB-vRK" eventType="touchUpInside" id="t1u-rT-IpF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="线程操作：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-l8-gcU">
+                                <rect key="frame" x="20" y="202" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7An-3B-iJf">
+                                <rect key="frame" x="60" y="233" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.40322289929999999" green="0.06185153501" blue="0.22312500339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cj9-6Z-JZq"/>
+                                    <constraint firstAttribute="height" constant="34" id="rFS-rX-yGg"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <state key="selected">
+                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="threadStart:" destination="DnT-gB-vRK" eventType="touchUpInside" id="RjE-DU-YNa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSr-W6-BXa">
+                                <rect key="frame" x="254" y="233" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.40322289929999999" green="0.06185153501" blue="0.22312500339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B2A-US-bf1"/>
+                                    <constraint firstAttribute="height" constant="34" id="Lw9-wW-8gt"/>
+                                </constraints>
+                                <state key="normal" title="取消"/>
+                                <state key="selected">
+                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="threadCancel:" destination="DnT-gB-vRK" eventType="touchUpInside" id="qDg-9u-ljU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBT-GY-3k1">
+                                <rect key="frame" x="60" y="351" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.40322289929999999" green="0.06185153501" blue="0.22312500339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CkM-Pk-GHx"/>
+                                    <constraint firstAttribute="height" constant="34" id="Jub-8G-Quj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="wmThreadStart:" destination="DnT-gB-vRK" eventType="touchUpInside" id="y19-eQ-9xb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arq-Sx-vN9">
+                                <rect key="frame" x="254" y="351" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.40322289929999999" green="0.06185153501" blue="0.22312500339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yMH-c7-Kfu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="取消"/>
+                                <connections>
+                                    <action selector="wmThreadCancel:" destination="DnT-gB-vRK" eventType="touchUpInside" id="adn-rX-wI8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -143,20 +211,30 @@
                         <constraints>
                             <constraint firstItem="AN7-i2-P7L" firstAttribute="leading" secondItem="NMo-pT-C17" secondAttribute="leading" id="0Dv-OL-39S"/>
                             <constraint firstItem="Wzq-uK-39x" firstAttribute="leading" secondItem="GXa-0L-DzD" secondAttribute="leading" constant="20" id="5y3-XA-Lmh"/>
+                            <constraint firstItem="SSr-W6-BXa" firstAttribute="trailing" secondItem="NMo-pT-C17" secondAttribute="trailing" constant="-40" id="FdH-gr-SvX"/>
                             <constraint firstItem="AN7-i2-P7L" firstAttribute="trailing" secondItem="NMo-pT-C17" secondAttribute="trailing" id="GpX-7h-mTs"/>
+                            <constraint firstItem="AN7-i2-P7L" firstAttribute="top" secondItem="7An-3B-iJf" secondAttribute="bottom" constant="30" id="GtY-Ig-8sC"/>
+                            <constraint firstItem="DyZ-l8-gcU" firstAttribute="top" secondItem="NMo-pT-C17" secondAttribute="bottom" constant="10" id="IfR-MJ-3hL"/>
+                            <constraint firstItem="WBT-GY-3k1" firstAttribute="centerX" secondItem="7An-3B-iJf" secondAttribute="centerX" id="Q2S-KN-Q02"/>
                             <constraint firstItem="GXa-0L-DzD" firstAttribute="trailing" secondItem="Wzq-uK-39x" secondAttribute="trailing" constant="20" id="QUU-Aa-k74"/>
                             <constraint firstItem="NMo-pT-C17" firstAttribute="trailing" secondItem="Wzq-uK-39x" secondAttribute="trailing" id="RhQ-in-SVK"/>
                             <constraint firstItem="NMo-pT-C17" firstAttribute="leading" secondItem="Wzq-uK-39x" secondAttribute="leading" id="VyX-s9-CeL"/>
                             <constraint firstItem="Wzq-uK-39x" firstAttribute="top" secondItem="GXa-0L-DzD" secondAttribute="top" constant="40" id="ZDB-z9-ukI"/>
                             <constraint firstItem="NMo-pT-C17" firstAttribute="top" secondItem="Wzq-uK-39x" secondAttribute="bottom" constant="20" id="dfe-qv-uaJ"/>
-                            <constraint firstItem="AN7-i2-P7L" firstAttribute="top" secondItem="NMo-pT-C17" secondAttribute="bottom" constant="20" id="mvF-xj-ObM"/>
+                            <constraint firstItem="DyZ-l8-gcU" firstAttribute="leading" secondItem="NMo-pT-C17" secondAttribute="leading" id="drI-b7-LGW"/>
+                            <constraint firstItem="Arq-Sx-vN9" firstAttribute="centerX" secondItem="SSr-W6-BXa" secondAttribute="centerX" id="lU3-6V-6k9"/>
+                            <constraint firstItem="SSr-W6-BXa" firstAttribute="centerY" secondItem="7An-3B-iJf" secondAttribute="centerY" id="nk4-oC-8zO"/>
+                            <constraint firstItem="Arq-Sx-vN9" firstAttribute="top" secondItem="AN7-i2-P7L" secondAttribute="bottom" constant="10" id="vKX-P8-ZsN"/>
+                            <constraint firstItem="WBT-GY-3k1" firstAttribute="top" secondItem="AN7-i2-P7L" secondAttribute="bottom" constant="10" id="wEE-Eg-PnC"/>
+                            <constraint firstItem="7An-3B-iJf" firstAttribute="top" secondItem="DyZ-l8-gcU" secondAttribute="bottom" constant="10" id="x2o-Mr-BvN"/>
+                            <constraint firstItem="7An-3B-iJf" firstAttribute="leading" secondItem="DyZ-l8-gcU" secondAttribute="leading" constant="40" id="xc6-pq-IQl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GXa-0L-DzD"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgx-aS-hLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="110"/>
+            <point key="canvasLocation" x="921.73913043478262" y="109.82142857142857"/>
         </scene>
         <!--NSOperation探索-->
         <scene sceneID="YIJ-1z-DRN">
