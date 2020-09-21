@@ -104,7 +104,53 @@
                     <view key="view" contentMode="scaleToFill" id="gDo-tk-Pr0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzq-uK-39x">
+                                <rect key="frame" x="20" y="84" width="374" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RXd-RA-5tb"/>
+                                </constraints>
+                                <state key="normal" title="类方法创建线程"/>
+                                <connections>
+                                    <action selector="createThreadC:" destination="DnT-gB-vRK" eventType="touchUpInside" id="Btj-g3-h25"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMo-pT-C17">
+                                <rect key="frame" x="20" y="148" width="374" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ENh-OK-tsb"/>
+                                </constraints>
+                                <state key="normal" title="对象方法创建线程"/>
+                                <connections>
+                                    <action selector="createThreadO:" destination="DnT-gB-vRK" eventType="touchUpInside" id="6o0-5S-JLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN7-i2-P7L">
+                                <rect key="frame" x="20" y="212" width="374" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4VG-gH-64U"/>
+                                </constraints>
+                                <state key="normal" title="当前所在线程的名字"/>
+                                <connections>
+                                    <action selector="threadNameTest:" destination="DnT-gB-vRK" eventType="touchUpInside" id="Stb-3Z-vSn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AN7-i2-P7L" firstAttribute="leading" secondItem="NMo-pT-C17" secondAttribute="leading" id="0Dv-OL-39S"/>
+                            <constraint firstItem="Wzq-uK-39x" firstAttribute="leading" secondItem="GXa-0L-DzD" secondAttribute="leading" constant="20" id="5y3-XA-Lmh"/>
+                            <constraint firstItem="AN7-i2-P7L" firstAttribute="trailing" secondItem="NMo-pT-C17" secondAttribute="trailing" id="GpX-7h-mTs"/>
+                            <constraint firstItem="GXa-0L-DzD" firstAttribute="trailing" secondItem="Wzq-uK-39x" secondAttribute="trailing" constant="20" id="QUU-Aa-k74"/>
+                            <constraint firstItem="NMo-pT-C17" firstAttribute="trailing" secondItem="Wzq-uK-39x" secondAttribute="trailing" id="RhQ-in-SVK"/>
+                            <constraint firstItem="NMo-pT-C17" firstAttribute="leading" secondItem="Wzq-uK-39x" secondAttribute="leading" id="VyX-s9-CeL"/>
+                            <constraint firstItem="Wzq-uK-39x" firstAttribute="top" secondItem="GXa-0L-DzD" secondAttribute="top" constant="40" id="ZDB-z9-ukI"/>
+                            <constraint firstItem="NMo-pT-C17" firstAttribute="top" secondItem="Wzq-uK-39x" secondAttribute="bottom" constant="20" id="dfe-qv-uaJ"/>
+                            <constraint firstItem="AN7-i2-P7L" firstAttribute="top" secondItem="NMo-pT-C17" secondAttribute="bottom" constant="20" id="mvF-xj-ObM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GXa-0L-DzD"/>
                     </view>
                 </viewController>
