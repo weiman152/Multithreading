@@ -152,7 +152,7 @@
                                     <constraint firstAttribute="width" constant="100" id="cj9-6Z-JZq"/>
                                     <constraint firstAttribute="height" constant="34" id="rFS-rX-yGg"/>
                                 </constraints>
-                                <state key="normal" title="开始"/>
+                                <state key="normal" title="线程一开始"/>
                                 <state key="selected">
                                     <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -170,7 +170,7 @@
                                     <constraint firstAttribute="width" constant="100" id="B2A-US-bf1"/>
                                     <constraint firstAttribute="height" constant="34" id="Lw9-wW-8gt"/>
                                 </constraints>
-                                <state key="normal" title="取消"/>
+                                <state key="normal" title="线程一取消"/>
                                 <state key="selected">
                                     <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>

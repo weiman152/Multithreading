@@ -21,6 +21,7 @@
 }
 
 -(void)cancel{
+    NSLog(@"WMThread cancel");
     [super cancel];
     if ([self isCancelled]) {
         [NSThread exit];

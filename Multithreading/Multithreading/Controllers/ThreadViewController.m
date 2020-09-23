@@ -52,12 +52,12 @@
     //对象方法创建多线程 一
     self.thread1 = [[NSThread alloc] initWithBlock:^{
         NSLog(@"thread1： %@",[NSThread currentThread]);
-        for (int i=0; i<100; i++) {
+        for (int i=0; i<10000; i++) {
             NSLog(@"i= %d", i);
-            [NSThread sleepForTimeInterval:1];
         }
     }];
     self.thread1.name = @"线程一";
+    
     //对象方法创建多线程 二
     NSThread * thread2 = [[NSThread alloc] initWithTarget:self selector:@selector(hello:) object:@"小明"];
     thread2.name = @"线程二";
@@ -73,33 +73,44 @@
     [self.thread1 start];
 }
 
+//NSThread的线程调用cancel并不会停止，只是把isCancelled属性设置为YES，如何停止NSthread的线程还没找到方法
 - (IBAction)threadCancel:(id)sender {
     NSLog(@"thread1 取消");
+    [self printState:self.thread1];
     [self.thread1 cancel];
-    NSLog(@"状态,isCancelled： %d",[self.thread1 isCancelled]);
-    NSLog(@"状态,isFinished： %d",[self.thread1 isFinished]);
-    NSLog(@"状态,isExecuting： %d",[self.thread1 isExecuting]);
-//    if (self.thread1.isCancelled) {
-//        [NSThread exit];
-//    }
+    NSLog(@"cancel 后：");
+    [self printState:self.thread1];
+    if([self.thread1 isCancelled]==YES){
+        NSLog(@"thread1 被取消了，开始销毁它");
+        [NSThread exit];
+        self.thread1 = nil;
+    }
 }
 
 - (IBAction)wmThreadCreate:(id)sender {
+    NSLog(@"WMThread创建线程");
     self.wmThread = [[WMThread alloc] initWithBlock:^{
         NSLog(@"wmThread： %@",[NSThread currentThread]);
-        for (int i=0; i<100; i++) {
+        for (int i=0; i<10000; i++) {
             NSLog(@"wm, i= %d", i);
-            [NSThread sleepForTimeInterval:1];
         }
     }];
     self.wmThread.name = @"wmThread";
 }
 - (IBAction)wmThreadStart:(id)sender {
+    NSLog(@"wmThread 开始");
     [self.wmThread start];
 }
 
 - (IBAction)wmThreadCancel:(id)sender {
+    NSLog(@"wmThread 取消");
     [self.wmThread cancel];
+}
+
+-(void)printState:(NSThread *)thread{
+    NSLog(@"状态,isCancelled： %d",[thread isCancelled]);
+    NSLog(@"状态,isFinished： %d",[thread isFinished]);
+    NSLog(@"状态,isExecuting： %d",[thread isExecuting]);
 }
 
 -(void)printHi {
