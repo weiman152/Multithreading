@@ -23,10 +23,10 @@
 -(void)cancel{
     NSLog(@"WMThread cancel");
     [super cancel];
-    if ([self isCancelled]) {
+    if ([self isCancelled]==YES) {
+        NSLog(@"thread name: %@ 即将退出",self.name);
         [NSThread exit];
     }
-    NSLog(@"thread name: %@",[NSThread currentThread]);
 }
 
 @end

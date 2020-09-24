@@ -29,4 +29,8 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+-(void)dealloc {
+    NSLog(@"%@ 销毁了", NSStringFromClass([self class]));
+}
+
 @end

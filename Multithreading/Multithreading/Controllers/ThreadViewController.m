@@ -53,7 +53,7 @@
     self.thread1 = [[NSThread alloc] initWithBlock:^{
         NSLog(@"thread1： %@",[NSThread currentThread]);
         for (int i=0; i<10000; i++) {
-            NSLog(@"i= %d", i);
+            NSLog(@"%@，i= %d", [NSThread currentThread].name,i);
         }
     }];
     self.thread1.name = @"线程一";
@@ -64,16 +64,12 @@
     [thread2 start];
 }
 
-- (IBAction)threadNameTest:(id)sender {
-    
-}
-
 - (IBAction)threadStart:(id)sender {
     NSLog(@"thread1开始");
     [self.thread1 start];
 }
 
-//NSThread的线程调用cancel并不会停止，只是把isCancelled属性设置为YES，如何停止NSthread的线程还没找到方法
+//NSThread的线程调用cancel并不会停止，只是把isCancelled属性设置为YES
 - (IBAction)threadCancel:(id)sender {
     NSLog(@"thread1 取消");
     [self printState:self.thread1];
@@ -82,7 +78,7 @@
     [self printState:self.thread1];
     if([self.thread1 isCancelled]==YES){
         NSLog(@"thread1 被取消了，开始销毁它");
-        [NSThread exit];
+        NSLog(@"当前线程：%@", [NSThread currentThread]);
         self.thread1 = nil;
     }
 }
@@ -97,6 +93,7 @@
     }];
     self.wmThread.name = @"wmThread";
 }
+
 - (IBAction)wmThreadStart:(id)sender {
     NSLog(@"wmThread 开始");
     [self.wmThread start];
@@ -106,6 +103,42 @@
     NSLog(@"wmThread 取消");
     [self.wmThread cancel];
 }
+
+- (IBAction)sleepAction:(id)sender {
+    NSThread * threadA = [[NSThread alloc] initWithBlock:^{
+        //threadA 阻塞2秒后执行
+        [NSThread sleepForTimeInterval:2.0];
+        for (int i=0; i<10; i++) {
+            NSLog(@"%@, i = %d", [NSThread currentThread].name, i);
+        }
+        NSLog(@"threadA 结束了");
+    }];
+    threadA.name = @"线程A";
+    [threadA start];
+    
+    NSThread * threadB = [[NSThread alloc] initWithBlock:^{
+        for (int i=0; i<10; i++) {
+            NSLog(@"%@, i = %d", [NSThread currentThread].name, i);
+        }
+        NSLog(@"threadB 结束了");
+    }];
+    threadB.name = @"线程B";
+    [threadB start];
+    
+    //让这个线程等到某个日期的时候在执行
+    [NSThread detachNewThreadWithBlock:^{
+        NSDate * date = [NSDate dateWithTimeIntervalSinceNow:2];
+        [NSThread sleepUntilDate:date];
+        NSLog(@"终于等到这一天啦！我执行啦！");
+    }];
+    
+}
+
+//再次测试取消线程
+- (IBAction)cancelThreadAgain:(id)sender {
+    [NSThread detachNewThreadSelector:@selector(run) toTarget:self withObject:nil];
+}
+
 
 -(void)printState:(NSThread *)thread{
     NSLog(@"状态,isCancelled： %d",[thread isCancelled]);
@@ -126,6 +159,29 @@
 -(void)hello:(NSString *)name {
     NSLog(@"你好！%@",name);
     NSLog(@"当前线程是： %@",[NSThread currentThread]);
+}
+
+- (void)run {
+    NSLog(@"当前线程%@", [NSThread currentThread]);
+    //sleep不会影响线程的取消
+    [NSThread sleepForTimeInterval:1.0];
+    
+    for (int i = 0 ; i < 100; i++) {
+        NSLog(@"i = %d", i);
+        if (i == 20) {
+            //取消线程
+            [[NSThread currentThread] cancel];
+            NSLog(@"取消线程%@", [NSThread currentThread]);
+        }
+
+        if ([[NSThread currentThread] isCancelled]) {
+            NSLog(@"结束线程%@", [NSThread currentThread]);
+            //结束线程
+            [NSThread exit];
+            NSLog(@"这行代码不会打印的");
+        }
+
+    }
 }
 
 

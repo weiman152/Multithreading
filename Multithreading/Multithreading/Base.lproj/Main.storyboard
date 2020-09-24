@@ -135,7 +135,6 @@
                                 </constraints>
                                 <state key="normal" title="NSThread子类创建线程"/>
                                 <connections>
-                                    <action selector="threadNameTest:" destination="DnT-gB-vRK" eventType="touchUpInside" id="Stb-3Z-vSn"/>
                                     <action selector="wmThreadCreate:" destination="DnT-gB-vRK" eventType="touchUpInside" id="t1u-rT-IpF"/>
                                 </connections>
                             </button>
@@ -206,19 +205,47 @@
                                     <action selector="wmThreadCancel:" destination="DnT-gB-vRK" eventType="touchUpInside" id="adn-rX-wI8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJy-oG-0Is">
+                                <rect key="frame" x="20" y="415" width="374" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vdC-51-xqj"/>
+                                </constraints>
+                                <state key="normal" title="线程阻塞"/>
+                                <connections>
+                                    <action selector="sleepAction:" destination="DnT-gB-vRK" eventType="touchUpInside" id="JQe-w9-5sd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCU-FI-QeG">
+                                <rect key="frame" x="20" y="479" width="374" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TxG-OI-jbB"/>
+                                </constraints>
+                                <state key="normal" title="取消线程再次测试"/>
+                                <connections>
+                                    <action selector="cancelThreadAgain:" destination="DnT-gB-vRK" eventType="touchUpInside" id="CVs-er-Zgy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="AN7-i2-P7L" firstAttribute="leading" secondItem="NMo-pT-C17" secondAttribute="leading" id="0Dv-OL-39S"/>
                             <constraint firstItem="Wzq-uK-39x" firstAttribute="leading" secondItem="GXa-0L-DzD" secondAttribute="leading" constant="20" id="5y3-XA-Lmh"/>
+                            <constraint firstItem="XCU-FI-QeG" firstAttribute="trailing" secondItem="UJy-oG-0Is" secondAttribute="trailing" id="FAf-3h-Npa"/>
                             <constraint firstItem="SSr-W6-BXa" firstAttribute="trailing" secondItem="NMo-pT-C17" secondAttribute="trailing" constant="-40" id="FdH-gr-SvX"/>
                             <constraint firstItem="AN7-i2-P7L" firstAttribute="trailing" secondItem="NMo-pT-C17" secondAttribute="trailing" id="GpX-7h-mTs"/>
                             <constraint firstItem="AN7-i2-P7L" firstAttribute="top" secondItem="7An-3B-iJf" secondAttribute="bottom" constant="30" id="GtY-Ig-8sC"/>
                             <constraint firstItem="DyZ-l8-gcU" firstAttribute="top" secondItem="NMo-pT-C17" secondAttribute="bottom" constant="10" id="IfR-MJ-3hL"/>
+                            <constraint firstItem="XCU-FI-QeG" firstAttribute="leading" secondItem="UJy-oG-0Is" secondAttribute="leading" id="OTO-Me-tle"/>
                             <constraint firstItem="WBT-GY-3k1" firstAttribute="centerX" secondItem="7An-3B-iJf" secondAttribute="centerX" id="Q2S-KN-Q02"/>
+                            <constraint firstItem="UJy-oG-0Is" firstAttribute="top" secondItem="WBT-GY-3k1" secondAttribute="bottom" constant="30" id="Q47-Ug-cKu"/>
                             <constraint firstItem="GXa-0L-DzD" firstAttribute="trailing" secondItem="Wzq-uK-39x" secondAttribute="trailing" constant="20" id="QUU-Aa-k74"/>
+                            <constraint firstItem="UJy-oG-0Is" firstAttribute="leading" secondItem="AN7-i2-P7L" secondAttribute="leading" id="Qta-T3-Eaw"/>
                             <constraint firstItem="NMo-pT-C17" firstAttribute="trailing" secondItem="Wzq-uK-39x" secondAttribute="trailing" id="RhQ-in-SVK"/>
                             <constraint firstItem="NMo-pT-C17" firstAttribute="leading" secondItem="Wzq-uK-39x" secondAttribute="leading" id="VyX-s9-CeL"/>
+                            <constraint firstItem="XCU-FI-QeG" firstAttribute="top" secondItem="UJy-oG-0Is" secondAttribute="bottom" constant="20" id="Xs7-UL-GFo"/>
+                            <constraint firstItem="UJy-oG-0Is" firstAttribute="trailing" secondItem="AN7-i2-P7L" secondAttribute="trailing" id="YeU-Xc-GXD"/>
                             <constraint firstItem="Wzq-uK-39x" firstAttribute="top" secondItem="GXa-0L-DzD" secondAttribute="top" constant="40" id="ZDB-z9-ukI"/>
                             <constraint firstItem="NMo-pT-C17" firstAttribute="top" secondItem="Wzq-uK-39x" secondAttribute="bottom" constant="20" id="dfe-qv-uaJ"/>
                             <constraint firstItem="DyZ-l8-gcU" firstAttribute="leading" secondItem="NMo-pT-C17" secondAttribute="leading" id="drI-b7-LGW"/>
