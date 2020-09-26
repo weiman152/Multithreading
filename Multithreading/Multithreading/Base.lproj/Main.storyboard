@@ -227,11 +227,24 @@
                                     <action selector="cancelThreadAgain:" destination="DnT-gB-vRK" eventType="touchUpInside" id="CVs-er-Zgy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foN-ys-fis">
+                                <rect key="frame" x="20" y="553" width="374" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.41386112358372151" blue="0.070987524888577513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bCe-Cu-u2O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="案例：售票"/>
+                                <connections>
+                                    <action selector="sellTickets:" destination="DnT-gB-vRK" eventType="touchUpInside" id="Aio-6i-nRX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="AN7-i2-P7L" firstAttribute="leading" secondItem="NMo-pT-C17" secondAttribute="leading" id="0Dv-OL-39S"/>
                             <constraint firstItem="Wzq-uK-39x" firstAttribute="leading" secondItem="GXa-0L-DzD" secondAttribute="leading" constant="20" id="5y3-XA-Lmh"/>
+                            <constraint firstItem="foN-ys-fis" firstAttribute="trailing" secondItem="XCU-FI-QeG" secondAttribute="trailing" id="BsO-eg-4So"/>
                             <constraint firstItem="XCU-FI-QeG" firstAttribute="trailing" secondItem="UJy-oG-0Is" secondAttribute="trailing" id="FAf-3h-Npa"/>
                             <constraint firstItem="SSr-W6-BXa" firstAttribute="trailing" secondItem="NMo-pT-C17" secondAttribute="trailing" constant="-40" id="FdH-gr-SvX"/>
                             <constraint firstItem="AN7-i2-P7L" firstAttribute="trailing" secondItem="NMo-pT-C17" secondAttribute="trailing" id="GpX-7h-mTs"/>
@@ -251,8 +264,10 @@
                             <constraint firstItem="DyZ-l8-gcU" firstAttribute="leading" secondItem="NMo-pT-C17" secondAttribute="leading" id="drI-b7-LGW"/>
                             <constraint firstItem="Arq-Sx-vN9" firstAttribute="centerX" secondItem="SSr-W6-BXa" secondAttribute="centerX" id="lU3-6V-6k9"/>
                             <constraint firstItem="SSr-W6-BXa" firstAttribute="centerY" secondItem="7An-3B-iJf" secondAttribute="centerY" id="nk4-oC-8zO"/>
+                            <constraint firstItem="foN-ys-fis" firstAttribute="leading" secondItem="XCU-FI-QeG" secondAttribute="leading" id="rbR-P1-xke"/>
                             <constraint firstItem="Arq-Sx-vN9" firstAttribute="top" secondItem="AN7-i2-P7L" secondAttribute="bottom" constant="10" id="vKX-P8-ZsN"/>
                             <constraint firstItem="WBT-GY-3k1" firstAttribute="top" secondItem="AN7-i2-P7L" secondAttribute="bottom" constant="10" id="wEE-Eg-PnC"/>
+                            <constraint firstItem="foN-ys-fis" firstAttribute="top" secondItem="XCU-FI-QeG" secondAttribute="bottom" constant="30" id="wbf-zq-bRH"/>
                             <constraint firstItem="7An-3B-iJf" firstAttribute="top" secondItem="DyZ-l8-gcU" secondAttribute="bottom" constant="10" id="x2o-Mr-BvN"/>
                             <constraint firstItem="7An-3B-iJf" firstAttribute="leading" secondItem="DyZ-l8-gcU" secondAttribute="leading" constant="40" id="xc6-pq-IQl"/>
                         </constraints>

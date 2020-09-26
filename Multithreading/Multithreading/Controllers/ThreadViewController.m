@@ -13,6 +13,8 @@
 
 @property(nonatomic, strong)NSThread * thread1;
 @property(nonatomic, strong)WMThread * wmThread;
+//总票数
+@property(nonatomic, assign)int totalTickets;
 
 @end
 
@@ -139,6 +141,22 @@
     [NSThread detachNewThreadSelector:@selector(run) toTarget:self withObject:nil];
 }
 
+//售票
+- (IBAction)sellTickets:(id)sender {
+    self.totalTickets = 100;
+    
+    NSThread * t1 = [[NSThread alloc] initWithTarget:self selector:@selector(sell) object:nil];
+    t1.name = @"售票员：王美美";
+    [t1 start];
+    
+    NSThread * t2 = [[NSThread alloc] initWithTarget:self selector:@selector(sell) object:nil];
+    t2.name = @"售票员：李帅帅";
+    [t2 start];
+    
+    NSThread * t3 = [[NSThread alloc] initWithTarget:self selector:@selector(sell) object:nil];
+    t3.name = @"售票员：张靓靓";
+    [t3 start];
+}
 
 -(void)printState:(NSThread *)thread{
     NSLog(@"状态,isCancelled： %d",[thread isCancelled]);
@@ -184,5 +202,12 @@
     }
 }
 
-
+- (void)sell{
+    NSLog(@"开始售票，当前余票：%d", self.totalTickets);
+    while (self.totalTickets > 0) {
+        [NSThread sleepForTimeInterval:1.0];
+        self.totalTickets--;
+        NSLog(@"%@ 卖出一张，余票：%d", [NSThread currentThread].name, self.totalTickets);
+    }
+}
 @end
