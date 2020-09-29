@@ -143,7 +143,7 @@
 
 //售票
 - (IBAction)sellTickets:(id)sender {
-    self.totalTickets = 100;
+    self.totalTickets = 10;
     
     NSThread * t1 = [[NSThread alloc] initWithTarget:self selector:@selector(sell) object:nil];
     t1.name = @"售票员：王美美";
@@ -206,8 +206,16 @@
     NSLog(@"开始售票，当前余票：%d", self.totalTickets);
     while (self.totalTickets > 0) {
         [NSThread sleepForTimeInterval:1.0];
-        self.totalTickets--;
-        NSLog(@"%@ 卖出一张，余票：%d", [NSThread currentThread].name, self.totalTickets);
+        //互斥锁--锁内的代码在同一时间只有一个线程在执行
+        @synchronized (self) {
+            if(self.totalTickets > 0){
+                self.totalTickets--;
+                NSLog(@"%@ 卖出一张，余票：%d", [NSThread currentThread].name, self.totalTickets);
+            }else{
+                NSLog(@"余票不足，出票失败！");
+            }
+            
+        }
     }
 }
 @end
