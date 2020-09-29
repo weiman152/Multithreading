@@ -315,7 +315,117 @@
                     <view key="view" contentMode="scaleToFill" id="U1x-Z2-iT9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpX-Dq-on7">
+                                <rect key="frame" x="20" y="84" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gJ5-cf-A89"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="1.同步任务+串行队列"/>
+                                <connections>
+                                    <action selector="gcdTest1:" destination="9S4-m0-zbc" eventType="touchUpInside" id="kCQ-rA-hGV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlv-oO-chD">
+                                <rect key="frame" x="20" y="148" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="2.同步任务+并发队列"/>
+                                <connections>
+                                    <action selector="gcdTest2:" destination="9S4-m0-zbc" eventType="touchUpInside" id="Nza-VV-C5x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QV4-wK-E0O">
+                                <rect key="frame" x="20" y="212" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="3.异步任务+串行队列"/>
+                                <connections>
+                                    <action selector="gcdTest3:" destination="9S4-m0-zbc" eventType="touchUpInside" id="Whl-LK-AAe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APB-pn-PQ0">
+                                <rect key="frame" x="20" y="276" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="4.异步任务+并发队列"/>
+                                <connections>
+                                    <action selector="gcdTest4:" destination="9S4-m0-zbc" eventType="touchUpInside" id="wde-N4-Tuh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K7-qI-5Te">
+                                <rect key="frame" x="20" y="340" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="5.同步任务+主队列"/>
+                                <connections>
+                                    <action selector="gcdTest5:" destination="9S4-m0-zbc" eventType="touchUpInside" id="RJF-Gr-RQA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DB5-4B-NNy">
+                                <rect key="frame" x="20" y="404" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="6.异步任务+主队列"/>
+                                <connections>
+                                    <action selector="gcdTest6:" destination="9S4-m0-zbc" eventType="touchUpInside" id="829-3f-UC8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHp-4f-hPw">
+                                <rect key="frame" x="20" y="468" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="7.同步任务+全局队列"/>
+                                <connections>
+                                    <action selector="gcdTest7:" destination="9S4-m0-zbc" eventType="touchUpInside" id="1R0-Aa-rTk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMk-Kv-jSp">
+                                <rect key="frame" x="20" y="532" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="8.异步任务+全局队列"/>
+                                <connections>
+                                    <action selector="gcdTest8:" destination="9S4-m0-zbc" eventType="touchUpInside" id="Br2-s4-UoO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oMk-Kv-jSp" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="0Wr-2G-nsA"/>
+                            <constraint firstItem="DB5-4B-NNy" firstAttribute="top" secondItem="0K7-qI-5Te" secondAttribute="bottom" constant="20" id="7Ek-Nd-SJ1"/>
+                            <constraint firstItem="QV4-wK-E0O" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="D3n-rT-L7k"/>
+                            <constraint firstItem="0K7-qI-5Te" firstAttribute="top" secondItem="APB-pn-PQ0" secondAttribute="bottom" constant="20" id="DO6-dt-Muu"/>
+                            <constraint firstItem="cHp-4f-hPw" firstAttribute="top" secondItem="DB5-4B-NNy" secondAttribute="bottom" constant="20" id="HHz-oo-7ll"/>
+                            <constraint firstItem="oMk-Kv-jSp" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="He0-XB-aFj"/>
+                            <constraint firstItem="0K7-qI-5Te" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="J6x-Np-5Ul"/>
+                            <constraint firstItem="APB-pn-PQ0" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="Jct-XB-ATe"/>
+                            <constraint firstItem="cHp-4f-hPw" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="Ny7-TW-6e0"/>
+                            <constraint firstItem="oMk-Kv-jSp" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="P1s-QN-ElR"/>
+                            <constraint firstItem="Hlv-oO-chD" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="Pbo-oD-goG"/>
+                            <constraint firstItem="APB-pn-PQ0" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="Sm7-KS-7eS"/>
+                            <constraint firstItem="htt-s1-JKs" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" constant="20" id="UeQ-7e-M1N"/>
+                            <constraint firstItem="APB-pn-PQ0" firstAttribute="top" secondItem="QV4-wK-E0O" secondAttribute="bottom" constant="20" id="XXY-RH-IH2"/>
+                            <constraint firstItem="DB5-4B-NNy" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="XfZ-TZ-ane"/>
+                            <constraint firstItem="DB5-4B-NNy" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="ZPF-dR-bWs"/>
+                            <constraint firstItem="DB5-4B-NNy" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="bb9-9q-aVF"/>
+                            <constraint firstItem="QV4-wK-E0O" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="crI-3R-MYC"/>
+                            <constraint firstItem="hpX-Dq-on7" firstAttribute="top" secondItem="htt-s1-JKs" secondAttribute="top" constant="40" id="d2n-Cl-vrO"/>
+                            <constraint firstItem="APB-pn-PQ0" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="dOw-JY-Jrl"/>
+                            <constraint firstItem="cHp-4f-hPw" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="hb4-9L-nfN"/>
+                            <constraint firstItem="cHp-4f-hPw" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="hfw-8K-92D"/>
+                            <constraint firstItem="0K7-qI-5Te" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="jTC-4V-dNs"/>
+                            <constraint firstItem="Hlv-oO-chD" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="meP-zf-5DD"/>
+                            <constraint firstItem="hpX-Dq-on7" firstAttribute="leading" secondItem="htt-s1-JKs" secondAttribute="leading" constant="20" id="p5l-fJ-uEW"/>
+                            <constraint firstItem="0K7-qI-5Te" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="qRX-4o-dhg"/>
+                            <constraint firstItem="Hlv-oO-chD" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="qZW-Kl-jco"/>
+                            <constraint firstItem="oMk-Kv-jSp" firstAttribute="top" secondItem="cHp-4f-hPw" secondAttribute="bottom" constant="20" id="qsi-T0-7Y4"/>
+                            <constraint firstItem="QV4-wK-E0O" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="rMf-LQ-U41"/>
+                            <constraint firstItem="Hlv-oO-chD" firstAttribute="top" secondItem="hpX-Dq-on7" secondAttribute="bottom" constant="20" id="u3Z-wo-nDf"/>
+                            <constraint firstItem="QV4-wK-E0O" firstAttribute="top" secondItem="Hlv-oO-chD" secondAttribute="bottom" constant="20" id="upc-wI-2wR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="htt-s1-JKs"/>
                     </view>
                 </viewController>
