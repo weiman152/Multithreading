@@ -168,27 +168,92 @@
 
 //4.异步任务+并发队列
 - (IBAction)gcdTest4:(id)sender {
-    
+    NSLog(@"测试开始，异步任务+并发队列");
+    dispatch_queue_t bfq = dispatch_queue_create("并发队列", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(bfq, ^{
+        NSLog(@"任务一");
+        NSLog(@"1.当前线程：%@",[NSThread currentThread]);
+    });
+    dispatch_async(bfq, ^{
+        [NSThread sleepForTimeInterval:2.0];
+        NSLog(@"任务二");
+        NSLog(@"2.当前线程：%@",[NSThread currentThread]);
+    });
+    dispatch_async(bfq, ^{
+        NSLog(@"任务三");
+        NSLog(@"3.当前线程：%@",[NSThread currentThread]);
+    });
+    NSLog(@"测试结束了！");
 }
 
-//5.同步任务+主队列
+//5.同步任务+主队列:死锁
 - (IBAction)gcdTest5:(id)sender {
-    
+    NSLog(@"测试开始，同步任务+主队列");
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        NSLog(@"任务一");
+        NSLog(@"1.线程：%@",[NSThread currentThread]);
+    });
+    NSLog(@"测试结束");
 }
 
 //6.异步任务+主队列
 - (IBAction)gcdTest6:(id)sender {
-    
+    NSLog(@"测试开始，异步任务+主队列");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"任务一");
+        NSLog(@"1.线程：%@",[NSThread currentThread]);
+    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [NSThread sleepForTimeInterval:2.0];
+        NSLog(@"任务二");
+        NSLog(@"2.线程：%@",[NSThread currentThread]);
+    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"任务三");
+        NSLog(@"3.线程：%@",[NSThread currentThread]);
+    });
+    NSLog(@"测试结束。");
 }
 
 //7.同步任务+全局队列（也是并发队列）
 - (IBAction)gcdTest7:(id)sender {
-    
+    NSLog(@"开始，同步任务+全局队列（也是并发队列）");
+    dispatch_queue_t global = dispatch_get_global_queue(0, 0);
+    dispatch_sync(global, ^{
+        NSLog(@"任务一");
+        NSLog(@"1.线程：%@",[NSThread currentThread]);
+    });
+    dispatch_sync(global, ^{
+        [NSThread sleepForTimeInterval:2.0];
+        NSLog(@"任务二");
+        NSLog(@"2.线程：%@",[NSThread currentThread]);
+    });
+    dispatch_sync(global, ^{
+        NSLog(@"任务三");
+        NSLog(@"3.线程：%@",[NSThread currentThread]);
+    });
+    NSLog(@"测试结束了！");
 }
 
 //8.异步任务+全局队列（也是并发队列）
 - (IBAction)gcdTest8:(id)sender {
+    NSLog(@"开始，异步任务+全局队列");
+    dispatch_queue_t global = dispatch_get_global_queue(0, 0);
+    dispatch_async(global, ^{
+        NSLog(@"任务一");
+        NSLog(@"1.线程：%@",[NSThread currentThread]);
+    });
+    dispatch_async(global, ^{
+        [NSThread sleepForTimeInterval:2.0];
+        NSLog(@"任务二");
+        NSLog(@"2.线程：%@",[NSThread currentThread]);
+    });
+    dispatch_async(global, ^{
+        NSLog(@"任务三");
+        NSLog(@"3.线程：%@",[NSThread currentThread]);
+    });
     
+    NSLog(@"测试结束了");
 }
 
 
