@@ -114,7 +114,29 @@
 
 //队列组
 - (IBAction)duilie:(id)sender {
-    
+    //创建队列组
+    dispatch_group_t group = dispatch_group_create();
+    //创建并发队列
+    dispatch_queue_t queue = dispatch_queue_create("并发", DISPATCH_QUEUE_CONCURRENT);
+    //执行队列组任务
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"这是个队列组中的任务,编号1");
+        NSLog(@"任务一：线程%@",[NSThread currentThread]);
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:1.0];
+        NSLog(@"这是个队列组中的任务,编号2,睡了1秒");
+        NSLog(@"任务二：线程%@",[NSThread currentThread]);
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:1.0];
+        NSLog(@"这是个队列组中的任务,编号3");
+        NSLog(@"任务三：线程%@",[NSThread currentThread]);
+    });
+    //队列组执行完之后执行的函数
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"队列组任务执行完成。");
+    });
 }
 
 
