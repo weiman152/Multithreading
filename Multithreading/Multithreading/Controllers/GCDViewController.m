@@ -7,6 +7,7 @@
 //
 
 #import "GCDViewController.h"
+#import "GCDOtherViewController.h"
 
 @interface GCDViewController ()
 
@@ -274,5 +275,11 @@
         });
     });
 }
+
+- (IBAction)gcdOtherAction:(id)sender {
+    GCDOtherViewController * vc = [GCDOtherViewController instance];
+    [self pushVC:vc];
+}
+
 
 @end

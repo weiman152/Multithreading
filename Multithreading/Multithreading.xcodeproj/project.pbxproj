@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5FE0DC252709330032AAA9 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5FE0DB252709330032AAA9 /* GCDTest.m */; };
+		3BDA385B2526BB8600CD9532 /* GCDOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA385A2526BB8600CD9532 /* GCDOtherViewController.m */; };
 		3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE6AC325172FD200EACE6C /* PThreadViewController.m */; };
 		3BDE6ADB25189DAF00EACE6C /* WMThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE6ADA25189DAF00EACE6C /* WMThread.m */; };
 		3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5B43D24B1CAE00038A77F /* AppDelegate.m */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5FE0DA252709330032AAA9 /* GCDTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
+		3B5FE0DB252709330032AAA9 /* GCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
+		3BDA38592526BB8600CD9532 /* GCDOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDOtherViewController.h; sourceTree = "<group>"; };
+		3BDA385A2526BB8600CD9532 /* GCDOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDOtherViewController.m; sourceTree = "<group>"; };
 		3BDE6AC225172FD200EACE6C /* PThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PThreadViewController.h; sourceTree = "<group>"; };
 		3BDE6AC325172FD200EACE6C /* PThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PThreadViewController.m; sourceTree = "<group>"; };
 		3BDE6AD925189DAF00EACE6C /* WMThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMThread.h; sourceTree = "<group>"; };
@@ -65,6 +71,8 @@
 			children = (
 				3BDE6AD925189DAF00EACE6C /* WMThread.h */,
 				3BDE6ADA25189DAF00EACE6C /* WMThread.m */,
+				3B5FE0DA252709330032AAA9 /* GCDTest.h */,
+				3B5FE0DB252709330032AAA9 /* GCDTest.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -116,6 +124,8 @@
 				3BF5B46124B1D06B0038A77F /* ThreadViewController.m */,
 				3BF5B46324B1D0750038A77F /* GCDViewController.h */,
 				3BF5B46424B1D0750038A77F /* GCDViewController.m */,
+				3BDA38592526BB8600CD9532 /* GCDOtherViewController.h */,
+				3BDA385A2526BB8600CD9532 /* GCDOtherViewController.m */,
 				3BF5B46624B1D0850038A77F /* OperationViewController.h */,
 				3BF5B46724B1D0850038A77F /* OperationViewController.m */,
 				3BDE6AC225172FD200EACE6C /* PThreadViewController.h */,
@@ -230,6 +240,8 @@
 				3BF5B45C24B1CC6C0038A77F /* BaseViewController.m in Sources */,
 				3BF5B44F24B1CAE30038A77F /* main.m in Sources */,
 				3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */,
+				3B5FE0DC252709330032AAA9 /* GCDTest.m in Sources */,
+				3BDA385B2526BB8600CD9532 /* GCDOtherViewController.m in Sources */,
 				3BF5B46824B1D0850038A77F /* OperationViewController.m in Sources */,
 				3BF5B46524B1D0750038A77F /* GCDViewController.m in Sources */,
 				3BF5B45F24B1CC800038A77F /* MainViewController.m in Sources */,
