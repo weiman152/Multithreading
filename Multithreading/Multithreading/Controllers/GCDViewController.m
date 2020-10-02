@@ -10,6 +10,8 @@
 
 @interface GCDViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *showImg;
+
 @end
 
 @implementation GCDViewController
@@ -256,5 +258,21 @@
     NSLog(@"测试结束了");
 }
 
+//案例：下载图片，并显示
+- (IBAction)downLoad:(id)sender {
+    NSString * url = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601469152745&di=b68e17d74c30d400e1df9473ded0eb1c&imgtype=0&src=http%3A%2F%2Fhbimg.huabanimg.com%2F959c8754d77244788f5a8f775ee36dec4a5d362e236d9-eP3CI9_fw658";
+    dispatch_queue_t global = dispatch_get_global_queue(0, 0);
+    dispatch_async(global, ^{
+        NSURL * imgUrl = [NSURL URLWithString:url];
+        NSData * data = [NSData dataWithContentsOfURL:imgUrl];
+        UIImage *image = [UIImage imageWithData:data];
+        NSLog(@"下载图的线程：%@",[NSThread currentThread]);
+        //回到主线程，给图片赋值
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.showImg.image = image;
+            NSLog(@"显示图的线程：%@",[NSThread currentThread]);
+        });
+    });
+}
 
 @end

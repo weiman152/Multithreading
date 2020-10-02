@@ -317,10 +317,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpX-Dq-on7">
-                                <rect key="frame" x="20" y="84" width="374" height="44"/>
+                                <rect key="frame" x="20" y="84" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="gJ5-cf-A89"/>
+                                    <constraint firstAttribute="height" constant="30" id="gJ5-cf-A89"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="1.同步任务+串行队列"/>
@@ -329,7 +329,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlv-oO-chD">
-                                <rect key="frame" x="20" y="148" width="374" height="44"/>
+                                <rect key="frame" x="20" y="134" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="2.同步任务+并发队列"/>
@@ -338,7 +338,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QV4-wK-E0O">
-                                <rect key="frame" x="20" y="212" width="374" height="44"/>
+                                <rect key="frame" x="20" y="184" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="3.异步任务+串行队列"/>
@@ -347,7 +347,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APB-pn-PQ0">
-                                <rect key="frame" x="20" y="276" width="374" height="44"/>
+                                <rect key="frame" x="20" y="234" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="4.异步任务+并发队列"/>
@@ -356,7 +356,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K7-qI-5Te">
-                                <rect key="frame" x="20" y="340" width="374" height="44"/>
+                                <rect key="frame" x="20" y="284" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="5.同步任务+主队列"/>
@@ -365,7 +365,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DB5-4B-NNy">
-                                <rect key="frame" x="20" y="404" width="374" height="44"/>
+                                <rect key="frame" x="20" y="334" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="6.异步任务+主队列"/>
@@ -374,7 +374,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHp-4f-hPw">
-                                <rect key="frame" x="20" y="468" width="374" height="44"/>
+                                <rect key="frame" x="20" y="384" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="7.同步任务+全局队列"/>
@@ -383,7 +383,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMk-Kv-jSp">
-                                <rect key="frame" x="20" y="532" width="374" height="44"/>
+                                <rect key="frame" x="20" y="434" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.62745098040000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="8.异步任务+全局队列"/>
@@ -391,29 +391,52 @@
                                     <action selector="gcdTest8:" destination="9S4-m0-zbc" eventType="touchUpInside" id="Br2-s4-UoO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYL-t1-rim">
+                                <rect key="frame" x="20" y="494" width="190" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="cuk-sr-m9u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="案例：下载图片并显示">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="downLoad:" destination="9S4-m0-zbc" eventType="touchUpInside" id="4Wp-Kx-RjH"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-aS-tsl">
+                                <rect key="frame" x="30" y="548" width="354" height="294"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="oMk-Kv-jSp" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="0Wr-2G-nsA"/>
                             <constraint firstItem="DB5-4B-NNy" firstAttribute="top" secondItem="0K7-qI-5Te" secondAttribute="bottom" constant="20" id="7Ek-Nd-SJ1"/>
+                            <constraint firstItem="HYL-t1-rim" firstAttribute="leading" secondItem="oMk-Kv-jSp" secondAttribute="leading" id="9VW-bz-tQa"/>
                             <constraint firstItem="QV4-wK-E0O" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="D3n-rT-L7k"/>
                             <constraint firstItem="0K7-qI-5Te" firstAttribute="top" secondItem="APB-pn-PQ0" secondAttribute="bottom" constant="20" id="DO6-dt-Muu"/>
                             <constraint firstItem="cHp-4f-hPw" firstAttribute="top" secondItem="DB5-4B-NNy" secondAttribute="bottom" constant="20" id="HHz-oo-7ll"/>
                             <constraint firstItem="oMk-Kv-jSp" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="He0-XB-aFj"/>
                             <constraint firstItem="0K7-qI-5Te" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="J6x-Np-5Ul"/>
                             <constraint firstItem="APB-pn-PQ0" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="Jct-XB-ATe"/>
+                            <constraint firstItem="HYL-t1-rim" firstAttribute="top" secondItem="oMk-Kv-jSp" secondAttribute="bottom" constant="30" id="NRh-l0-Phc"/>
                             <constraint firstItem="cHp-4f-hPw" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="Ny7-TW-6e0"/>
                             <constraint firstItem="oMk-Kv-jSp" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="P1s-QN-ElR"/>
                             <constraint firstItem="Hlv-oO-chD" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="Pbo-oD-goG"/>
+                            <constraint firstItem="htt-s1-JKs" firstAttribute="trailing" secondItem="cAj-aS-tsl" secondAttribute="trailing" constant="30" id="RJR-LF-rhm"/>
                             <constraint firstItem="APB-pn-PQ0" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="Sm7-KS-7eS"/>
                             <constraint firstItem="htt-s1-JKs" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" constant="20" id="UeQ-7e-M1N"/>
                             <constraint firstItem="APB-pn-PQ0" firstAttribute="top" secondItem="QV4-wK-E0O" secondAttribute="bottom" constant="20" id="XXY-RH-IH2"/>
                             <constraint firstItem="DB5-4B-NNy" firstAttribute="height" secondItem="hpX-Dq-on7" secondAttribute="height" id="XfZ-TZ-ane"/>
                             <constraint firstItem="DB5-4B-NNy" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="ZPF-dR-bWs"/>
                             <constraint firstItem="DB5-4B-NNy" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="bb9-9q-aVF"/>
+                            <constraint firstItem="cAj-aS-tsl" firstAttribute="top" secondItem="HYL-t1-rim" secondAttribute="bottom" constant="20" id="cba-YY-O6u"/>
                             <constraint firstItem="QV4-wK-E0O" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="crI-3R-MYC"/>
                             <constraint firstItem="hpX-Dq-on7" firstAttribute="top" secondItem="htt-s1-JKs" secondAttribute="top" constant="40" id="d2n-Cl-vrO"/>
                             <constraint firstItem="APB-pn-PQ0" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="dOw-JY-Jrl"/>
+                            <constraint firstItem="htt-s1-JKs" firstAttribute="bottom" secondItem="cAj-aS-tsl" secondAttribute="bottom" constant="20" id="fKm-LU-4ZT"/>
+                            <constraint firstItem="cAj-aS-tsl" firstAttribute="leading" secondItem="htt-s1-JKs" secondAttribute="leading" constant="30" id="fLk-nX-bud"/>
                             <constraint firstItem="cHp-4f-hPw" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="hb4-9L-nfN"/>
                             <constraint firstItem="cHp-4f-hPw" firstAttribute="trailing" secondItem="hpX-Dq-on7" secondAttribute="trailing" id="hfw-8K-92D"/>
                             <constraint firstItem="0K7-qI-5Te" firstAttribute="leading" secondItem="hpX-Dq-on7" secondAttribute="leading" id="jTC-4V-dNs"/>
@@ -428,10 +451,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="htt-s1-JKs"/>
                     </view>
+                    <connections>
+                        <outlet property="showImg" destination="cAj-aS-tsl" id="7FJ-oZ-bqc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBO-fU-lwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1799" y="110"/>
+            <point key="canvasLocation" x="1798.5507246376812" y="109.82142857142857"/>
         </scene>
     </scenes>
 </document>
