@@ -10,6 +10,11 @@
 #import "GCDTest.h"
 
 @interface GCDOtherViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageOne;
+@property (weak, nonatomic) IBOutlet UIImageView *imageTwo;
+@property (weak, nonatomic) IBOutlet UIImageView *finalImage;
+@property (nonatomic,strong)UIImage * image1;
+@property (nonatomic,strong)UIImage * image2;
 
 @end
 
@@ -138,6 +143,59 @@
         NSLog(@"队列组任务执行完成。");
     });
 }
+
+//队列组案例：合成图片
+- (IBAction)groupDemo:(id)sender {
+    //1.创建队列组
+    dispatch_group_t group = dispatch_group_create();
+    //2.创建并发队列
+    dispatch_queue_t queue = dispatch_queue_create("并发", DISPATCH_QUEUE_CONCURRENT);
+    //3.下载图片一
+    dispatch_group_async(group, queue, ^{
+        NSString * str = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601638749466&di=92ace2ffa924fe6063e7a221729006b1&imgtype=0&src=http%3A%2F%2Fpic.autov.com.cn%2Fimages%2Fcms%2F20119%2F6%2F1315280805177.jpg";
+        self.image1 = [self loadImage:str];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.imageOne.image = self.image1;
+        });
+        
+    });
+    //4.下载图片二
+    dispatch_group_async(group, queue, ^{
+        NSString * str = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601638873771&di=07129fd95c56096a4282d3b072594491&imgtype=0&src=http%3A%2F%2Fimg.51miz.com%2Fpreview%2Felement%2F00%2F01%2F12%2F49%2FE-1124994-5FFE5AC7.jpg";
+        self.image2 = [self loadImage:str];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.imageTwo.image = self.image2;
+        });
+    });
+    //5.合成图片
+    dispatch_group_notify(group, queue, ^{
+        //图形上下文开启
+        UIGraphicsBeginImageContext(CGSizeMake(300, 200));
+        
+        //图形二
+        [self.image2 drawInRect:CGRectMake(0, 0, 300, 200)];
+        //图形一
+        [self.image1 drawInRect:CGRectMake(100, 50, 100, 100)];
+        //获取新的图片
+        UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+        //关闭上下文
+        UIGraphicsEndImageContext();
+        //回到主线程，显示图片
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.finalImage.image = image;
+            NSLog(@"完成图片的合成");
+        });
+    });
+}
+//下载图片
+-(UIImage *)loadImage:(NSString *)strUrl {
+    NSLog(@"当前线程：%@",[NSThread currentThread]);
+    NSURL * url = [NSURL URLWithString:strUrl];
+    NSData * data = [NSData dataWithContentsOfURL:url];
+    UIImage * image = [UIImage imageWithData:data];
+    return image;
+}
+
 
 
 @end
