@@ -285,13 +285,166 @@
                     <view key="view" contentMode="scaleToFill" id="hXP-Mk-dzG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rS-cQ-eJF">
+                                <rect key="frame" x="20" y="71" width="335" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="NSInvocationOperation"/>
+                                <connections>
+                                    <action selector="test1:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="NoD-Or-Fqf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. NSOperation的创建" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-RD-a1x">
+                                <rect key="frame" x="20" y="30" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njg-QS-1QO">
+                                <rect key="frame" x="20" y="120" width="335" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="NSBlockOperation"/>
+                                <connections>
+                                    <action selector="test2:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="fnS-hw-UIl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS0-Sw-UbE">
+                                <rect key="frame" x="20" y="169" width="335" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="自定义子类继承NSOperation"/>
+                                <connections>
+                                    <action selector="test3:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="ocZ-uz-Upx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. NSOperationQueue的使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlw-j0-wlk">
+                                <rect key="frame" x="20" y="223" width="227" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GW-wX-mw8">
+                                <rect key="frame" x="20" y="264" width="335" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="主队列"/>
+                                <connections>
+                                    <action selector="mainQ:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="h5L-xH-0ys"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGr-Uk-7oL">
+                                <rect key="frame" x="20" y="308" width="335" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="非主队列"/>
+                                <connections>
+                                    <action selector="otherQ:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="Vsv-Te-BbR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 任务和队列结合" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3U-xb-dr4">
+                                <rect key="frame" x="20" y="362" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrh-gg-EkN">
+                                <rect key="frame" x="20" y="403" width="156" height="27"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="NSBlockOperation+主队列"/>
+                                <connections>
+                                    <action selector="blockAndMain:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="RUs-mb-VH1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0b-Cy-Sva">
+                                <rect key="frame" x="187" y="403" width="168" height="27"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="NSBlockOperation+非主队列"/>
+                                <connections>
+                                    <action selector="blockAndOther:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="UW3-Ei-M67"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viZ-zz-ase">
+                                <rect key="frame" x="20" y="445" width="156" height="27"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Invocation+主队列"/>
+                                <connections>
+                                    <action selector="InvoAndMain:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="BQb-nM-Lvz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucd-Dg-euq">
+                                <rect key="frame" x="187" y="445" width="168" height="27"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Invocation +非主队列"/>
+                                <connections>
+                                    <action selector="invoAndOther:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="Sea-Lj-TD0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iie-BO-3IG">
+                                <rect key="frame" x="20" y="487" width="156" height="27"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="自定义类+主队列"/>
+                                <connections>
+                                    <action selector="customAndMain:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="X46-ah-HbI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKX-Bg-K0X">
+                                <rect key="frame" x="187" y="487" width="168" height="27"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="自定义类+非主队列"/>
+                                <connections>
+                                    <action selector="customAndOther:" destination="E5d-2P-Bsy" eventType="touchUpInside" id="J1k-8S-Bcn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4rS-cQ-eJF" firstAttribute="top" secondItem="clO-RD-a1x" secondAttribute="bottom" constant="20" id="1ZX-yb-OWM"/>
+                            <constraint firstItem="aGr-Uk-7oL" firstAttribute="leading" secondItem="6GW-wX-mw8" secondAttribute="leading" id="53w-8T-iit"/>
+                            <constraint firstItem="6GW-wX-mw8" firstAttribute="top" secondItem="Jlw-j0-wlk" secondAttribute="bottom" constant="20" id="6fU-3y-WCG"/>
+                            <constraint firstItem="Njg-QS-1QO" firstAttribute="trailing" secondItem="4rS-cQ-eJF" secondAttribute="trailing" id="75L-9t-x9z"/>
+                            <constraint firstItem="6GW-wX-mw8" firstAttribute="trailing" secondItem="QS0-Sw-UbE" secondAttribute="trailing" id="8eK-8X-Cjy"/>
+                            <constraint firstItem="Jlw-j0-wlk" firstAttribute="top" secondItem="QS0-Sw-UbE" secondAttribute="bottom" constant="20" id="9Hc-xh-695"/>
+                            <constraint firstItem="clO-RD-a1x" firstAttribute="leading" secondItem="bVo-w9-Yek" secondAttribute="leading" constant="20" id="Bt3-D5-ARg"/>
+                            <constraint firstItem="Njg-QS-1QO" firstAttribute="leading" secondItem="4rS-cQ-eJF" secondAttribute="leading" id="CIq-6U-stM"/>
+                            <constraint firstItem="JKX-Bg-K0X" firstAttribute="trailing" secondItem="m0b-Cy-Sva" secondAttribute="trailing" id="CiS-nt-s1D"/>
+                            <constraint firstItem="6GW-wX-mw8" firstAttribute="leading" secondItem="QS0-Sw-UbE" secondAttribute="leading" id="Etc-5s-lG7"/>
+                            <constraint firstItem="ucd-Dg-euq" firstAttribute="trailing" secondItem="m0b-Cy-Sva" secondAttribute="trailing" id="Lif-k1-ruZ"/>
+                            <constraint firstItem="viZ-zz-ase" firstAttribute="top" secondItem="lrh-gg-EkN" secondAttribute="bottom" constant="15" id="PYO-Z4-92X"/>
+                            <constraint firstItem="iie-BO-3IG" firstAttribute="leading" secondItem="lrh-gg-EkN" secondAttribute="leading" id="RFh-3w-NB7"/>
+                            <constraint firstItem="T3U-xb-dr4" firstAttribute="leading" secondItem="bVo-w9-Yek" secondAttribute="leading" constant="20" id="RS6-1W-vxd"/>
+                            <constraint firstItem="iie-BO-3IG" firstAttribute="trailing" secondItem="lrh-gg-EkN" secondAttribute="trailing" id="RrL-3n-7EI"/>
+                            <constraint firstItem="aGr-Uk-7oL" firstAttribute="trailing" secondItem="6GW-wX-mw8" secondAttribute="trailing" id="SOp-vV-CCN"/>
+                            <constraint firstItem="JKX-Bg-K0X" firstAttribute="top" secondItem="ucd-Dg-euq" secondAttribute="bottom" constant="15" id="SyK-UZ-fVi"/>
+                            <constraint firstItem="JKX-Bg-K0X" firstAttribute="leading" secondItem="m0b-Cy-Sva" secondAttribute="leading" id="TLx-zY-zSt"/>
+                            <constraint firstItem="viZ-zz-ase" firstAttribute="leading" secondItem="lrh-gg-EkN" secondAttribute="leading" id="ToK-Dl-NXQ"/>
+                            <constraint firstItem="lrh-gg-EkN" firstAttribute="top" secondItem="T3U-xb-dr4" secondAttribute="bottom" constant="20" id="UwQ-ZE-Hcf"/>
+                            <constraint firstItem="Njg-QS-1QO" firstAttribute="top" secondItem="4rS-cQ-eJF" secondAttribute="bottom" constant="15" id="VaU-Ye-HIr"/>
+                            <constraint firstItem="lrh-gg-EkN" firstAttribute="leading" secondItem="bVo-w9-Yek" secondAttribute="leading" constant="20" id="XFR-Zo-ycS"/>
+                            <constraint firstItem="m0b-Cy-Sva" firstAttribute="top" secondItem="lrh-gg-EkN" secondAttribute="top" id="YBd-ld-stm"/>
+                            <constraint firstItem="QS0-Sw-UbE" firstAttribute="leading" secondItem="4rS-cQ-eJF" secondAttribute="leading" id="YEB-Zb-lBP"/>
+                            <constraint firstItem="viZ-zz-ase" firstAttribute="trailing" secondItem="lrh-gg-EkN" secondAttribute="trailing" id="ZZf-5q-Pan"/>
+                            <constraint firstItem="ucd-Dg-euq" firstAttribute="top" secondItem="m0b-Cy-Sva" secondAttribute="bottom" constant="15" id="cN3-gg-f11"/>
+                            <constraint firstItem="4rS-cQ-eJF" firstAttribute="leading" secondItem="bVo-w9-Yek" secondAttribute="leading" constant="20" id="d6G-oC-uIV"/>
+                            <constraint firstItem="QS0-Sw-UbE" firstAttribute="trailing" secondItem="4rS-cQ-eJF" secondAttribute="trailing" id="dhA-AL-3yQ"/>
+                            <constraint firstItem="iie-BO-3IG" firstAttribute="top" secondItem="viZ-zz-ase" secondAttribute="bottom" constant="15" id="fDg-Hc-YOy"/>
+                            <constraint firstItem="QS0-Sw-UbE" firstAttribute="top" secondItem="Njg-QS-1QO" secondAttribute="bottom" constant="15" id="fKp-Lz-d94"/>
+                            <constraint firstItem="bVo-w9-Yek" firstAttribute="trailing" secondItem="m0b-Cy-Sva" secondAttribute="trailing" constant="20" id="fmM-No-NAc"/>
+                            <constraint firstItem="clO-RD-a1x" firstAttribute="top" secondItem="bVo-w9-Yek" secondAttribute="top" constant="30" id="gyR-EL-eUk"/>
+                            <constraint firstItem="ucd-Dg-euq" firstAttribute="leading" secondItem="m0b-Cy-Sva" secondAttribute="leading" id="jTN-fN-lU0"/>
+                            <constraint firstItem="Jlw-j0-wlk" firstAttribute="leading" secondItem="bVo-w9-Yek" secondAttribute="leading" constant="20" id="nKF-o4-bmS"/>
+                            <constraint firstItem="bVo-w9-Yek" firstAttribute="trailing" secondItem="4rS-cQ-eJF" secondAttribute="trailing" constant="20" id="xe7-Lp-H2b"/>
+                            <constraint firstItem="aGr-Uk-7oL" firstAttribute="top" secondItem="6GW-wX-mw8" secondAttribute="bottom" constant="10" id="yXd-Ys-VMp"/>
+                            <constraint firstItem="T3U-xb-dr4" firstAttribute="top" secondItem="aGr-Uk-7oL" secondAttribute="bottom" constant="20" id="zJV-lt-s5z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bVo-w9-Yek"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EzW-b5-jzx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2632" y="110"/>
+            <point key="canvasLocation" x="2631.1999999999998" y="109.29535232383809"/>
         </scene>
         <!--pThread探索-->
         <scene sceneID="Ze6-nY-pHP">

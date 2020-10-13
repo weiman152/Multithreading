@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3B6F0A25358A5A00AEE8AE /* WMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B6F0925358A5A00AEE8AE /* WMOperation.m */; };
 		3B5FE0DC252709330032AAA9 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5FE0DB252709330032AAA9 /* GCDTest.m */; };
 		3BDA385B2526BB8600CD9532 /* GCDOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA385A2526BB8600CD9532 /* GCDOtherViewController.m */; };
 		3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE6AC325172FD200EACE6C /* PThreadViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3B6F0825358A5A00AEE8AE /* WMOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMOperation.h; sourceTree = "<group>"; };
+		3B3B6F0925358A5A00AEE8AE /* WMOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMOperation.m; sourceTree = "<group>"; };
 		3B5FE0DA252709330032AAA9 /* GCDTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
 		3B5FE0DB252709330032AAA9 /* GCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
 		3BDA38592526BB8600CD9532 /* GCDOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDOtherViewController.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				3BDE6ADA25189DAF00EACE6C /* WMThread.m */,
 				3B5FE0DA252709330032AAA9 /* GCDTest.h */,
 				3B5FE0DB252709330032AAA9 /* GCDTest.m */,
+				3B3B6F0825358A5A00AEE8AE /* WMOperation.h */,
+				3B3B6F0925358A5A00AEE8AE /* WMOperation.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 				3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */,
 				3BF5B45C24B1CC6C0038A77F /* BaseViewController.m in Sources */,
 				3BF5B44F24B1CAE30038A77F /* main.m in Sources */,
+				3B3B6F0A25358A5A00AEE8AE /* WMOperation.m in Sources */,
 				3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */,
 				3B5FE0DC252709330032AAA9 /* GCDTest.m in Sources */,
 				3BDA385B2526BB8600CD9532 /* GCDOtherViewController.m in Sources */,
