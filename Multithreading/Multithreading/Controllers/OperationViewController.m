@@ -10,6 +10,7 @@
 #import "WMOperation.h"
 #import "WMCXOperation.h"
 #import "WMBXOperation.h"
+#import "OperationOtherController.h"
 
 @interface OperationViewController ()
 
@@ -154,6 +155,12 @@
     [queue addOperation:p1];
     [queue addOperation:p2];
     [queue addOperation:p3];
+}
+
+//更多内容
+- (IBAction)moreVC:(id)sender {
+    OperationOtherController * vc = [OperationOtherController instance];
+    [self pushVC:vc];
 }
 
 -(void)task1 {
