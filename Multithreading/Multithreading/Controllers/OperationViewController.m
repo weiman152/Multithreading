@@ -8,6 +8,8 @@
 
 #import "OperationViewController.h"
 #import "WMOperation.h"
+#import "WMCXOperation.h"
+#import "WMBXOperation.h"
 
 @interface OperationViewController ()
 
@@ -48,6 +50,18 @@
 - (IBAction)test3:(id)sender {
     WMOperation * wmOp = [[WMOperation alloc] init];
     [wmOp start];
+    
+    //自定义串行
+    WMCXOperation * cxOp = [[WMCXOperation alloc] init];
+    NSLog(@"任务开始");
+    [cxOp start];
+    NSLog(@"任务结束");
+    
+    //自定义并行
+    WMBXOperation * bxOp = [[WMBXOperation alloc] init];
+    NSLog(@"并行任务开始");
+    [bxOp wmStart:bxOp];
+    NSLog(@"并行任务结束");
 }
 
 //----------2. 创建队列--------------
@@ -153,14 +167,6 @@
 
 -(void)task3 {
     NSLog(@"任务三， %@",[NSThread currentThread]);
-}
-
-- (IBAction)customAndMain:(id)sender {
-    
-}
-
-- (IBAction)customAndOther:(id)sender {
-    
 }
 
 

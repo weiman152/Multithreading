@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3B3B6F0A25358A5A00AEE8AE /* WMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B6F0925358A5A00AEE8AE /* WMOperation.m */; };
+		3B3B6F0D2536979200AEE8AE /* WMCXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B6F0C2536979200AEE8AE /* WMCXOperation.m */; };
+		3B3B6F10253697A700AEE8AE /* WMBXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B6F0F253697A700AEE8AE /* WMBXOperation.m */; };
+		3B3B6F1325383F3000AEE8AE /* OperationOtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B6F1225383F3000AEE8AE /* OperationOtherController.m */; };
 		3B5FE0DC252709330032AAA9 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5FE0DB252709330032AAA9 /* GCDTest.m */; };
 		3BDA385B2526BB8600CD9532 /* GCDOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA385A2526BB8600CD9532 /* GCDOtherViewController.m */; };
 		3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE6AC325172FD200EACE6C /* PThreadViewController.m */; };
@@ -28,6 +31,12 @@
 /* Begin PBXFileReference section */
 		3B3B6F0825358A5A00AEE8AE /* WMOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMOperation.h; sourceTree = "<group>"; };
 		3B3B6F0925358A5A00AEE8AE /* WMOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMOperation.m; sourceTree = "<group>"; };
+		3B3B6F0B2536979200AEE8AE /* WMCXOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMCXOperation.h; sourceTree = "<group>"; };
+		3B3B6F0C2536979200AEE8AE /* WMCXOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMCXOperation.m; sourceTree = "<group>"; };
+		3B3B6F0E253697A700AEE8AE /* WMBXOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMBXOperation.h; sourceTree = "<group>"; };
+		3B3B6F0F253697A700AEE8AE /* WMBXOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMBXOperation.m; sourceTree = "<group>"; };
+		3B3B6F1125383F3000AEE8AE /* OperationOtherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationOtherController.h; sourceTree = "<group>"; };
+		3B3B6F1225383F3000AEE8AE /* OperationOtherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationOtherController.m; sourceTree = "<group>"; };
 		3B5FE0DA252709330032AAA9 /* GCDTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
 		3B5FE0DB252709330032AAA9 /* GCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
 		3BDA38592526BB8600CD9532 /* GCDOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDOtherViewController.h; sourceTree = "<group>"; };
@@ -78,6 +87,10 @@
 				3B5FE0DB252709330032AAA9 /* GCDTest.m */,
 				3B3B6F0825358A5A00AEE8AE /* WMOperation.h */,
 				3B3B6F0925358A5A00AEE8AE /* WMOperation.m */,
+				3B3B6F0B2536979200AEE8AE /* WMCXOperation.h */,
+				3B3B6F0C2536979200AEE8AE /* WMCXOperation.m */,
+				3B3B6F0E253697A700AEE8AE /* WMBXOperation.h */,
+				3B3B6F0F253697A700AEE8AE /* WMBXOperation.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -133,6 +146,8 @@
 				3BDA385A2526BB8600CD9532 /* GCDOtherViewController.m */,
 				3BF5B46624B1D0850038A77F /* OperationViewController.h */,
 				3BF5B46724B1D0850038A77F /* OperationViewController.m */,
+				3B3B6F1125383F3000AEE8AE /* OperationOtherController.h */,
+				3B3B6F1225383F3000AEE8AE /* OperationOtherController.m */,
 				3BDE6AC225172FD200EACE6C /* PThreadViewController.h */,
 				3BDE6AC325172FD200EACE6C /* PThreadViewController.m */,
 			);
@@ -239,8 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3B6F10253697A700AEE8AE /* WMBXOperation.m in Sources */,
 				3BF5B46224B1D06B0038A77F /* ThreadViewController.m in Sources */,
 				3BDE6ADB25189DAF00EACE6C /* WMThread.m in Sources */,
+				3B3B6F0D2536979200AEE8AE /* WMCXOperation.m in Sources */,
 				3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */,
 				3BF5B45C24B1CC6C0038A77F /* BaseViewController.m in Sources */,
 				3BF5B44F24B1CAE30038A77F /* main.m in Sources */,
@@ -249,6 +266,7 @@
 				3B5FE0DC252709330032AAA9 /* GCDTest.m in Sources */,
 				3BDA385B2526BB8600CD9532 /* GCDOtherViewController.m in Sources */,
 				3BF5B46824B1D0850038A77F /* OperationViewController.m in Sources */,
+				3B3B6F1325383F3000AEE8AE /* OperationOtherController.m in Sources */,
 				3BF5B46524B1D0750038A77F /* GCDViewController.m in Sources */,
 				3BF5B45F24B1CC800038A77F /* MainViewController.m in Sources */,
 				3BF5B44124B1CAE00038A77F /* SceneDelegate.m in Sources */,
