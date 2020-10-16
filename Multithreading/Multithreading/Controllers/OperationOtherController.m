@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.isSuspend = NO;
 }
 
 //任务依赖
@@ -97,8 +97,22 @@
 //    [queue2 addOperation:op4];
 }
 
+//队列暂停，suspended
 - (IBAction)test4:(id)sender {
-    
+    NSOperationQueue * queue = [[NSOperationQueue alloc] init];
+    queue.suspended = YES
+    NSBlockOperation * op1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务一，%@",[NSThread currentThread]);
+    }];
+    [op1 addExecutionBlock:^{
+        NSLog(@"任务二开始，%@",[NSThread currentThread]);
+        for (int i=0; i<10; i++) {
+            [NSThread sleepForTimeInterval:1.0];
+            NSLog(@"2: i=%d",i);
+        }
+        NSLog(@"任务二结束");
+    }];
+    [queue addOperation:op1];
 }
 
 - (IBAction)test5:(id)sender {
