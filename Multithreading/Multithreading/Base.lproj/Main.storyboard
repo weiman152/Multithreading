@@ -777,7 +777,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaC-D2-3RB">
                                 <rect key="frame" x="20" y="84" width="335" height="34"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="NSOperation执行完成"/>
                                 <connections>
                                     <action selector="test2:" destination="Oai-gb-89X" eventType="touchUpInside" id="FoL-k2-VtI"/>
                                 </connections>
@@ -785,7 +785,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYF-M5-KTy">
                                 <rect key="frame" x="20" y="138" width="335" height="34"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="最大并发数"/>
                                 <connections>
                                     <action selector="test3:" destination="Oai-gb-89X" eventType="touchUpInside" id="kzA-xo-9KG"/>
                                 </connections>
