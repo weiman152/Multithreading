@@ -10,6 +10,8 @@
 
 @interface OperationOtherController ()
 
+@property(nonatomic, strong)NSOperationQueue * myQueue;
+
 @end
 
 @implementation OperationOtherController
@@ -121,6 +123,36 @@
 
 //取消所有任务
 - (IBAction)test5:(id)sender {
+    NSOperationQueue * queue = [[NSOperationQueue alloc] init];
+    NSBlockOperation * op1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"操作一：1，%@",[NSThread currentThread]);
+    }];
+    [op1 addExecutionBlock:^{
+        NSLog(@"操作一：2，%@",[NSThread currentThread]);
+    }];
+    NSBlockOperation * op2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"操作二：1，%@",[NSThread currentThread]);
+    }];
+    NSBlockOperation * op3 = [NSBlockOperation blockOperationWithBlock:^{
+        [NSThread sleepForTimeInterval:2.0];
+        NSLog(@"操作三：1，%@",[NSThread currentThread]);
+    }];
+    [queue addOperation:op1];
+    [queue addOperation:op2];
+    [queue addOperation:op3];
+    self.myQueue = queue;
+}
+
+- (IBAction)cancelTest5:(id)sender {
+    [self.myQueue cancelAllOperations];
+}
+
+- (IBAction)test6:(id)sender {
+    
+}
+
+//案例，下载两张图片并合成一张图
+- (IBAction)downLoadImg:(id)sender {
     
 }
 

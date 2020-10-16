@@ -801,9 +801,38 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrK-r3-0Ht">
                                 <rect key="frame" x="20" y="246" width="335" height="34"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="取消所有操作"/>
                                 <connections>
                                     <action selector="test5:" destination="Oai-gb-89X" eventType="touchUpInside" id="z5X-pU-dlR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRo-8S-k7q">
+                                <rect key="frame" x="20" y="288" width="60" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="yVk-cm-3uZ"/>
+                                </constraints>
+                                <state key="normal" title="取消"/>
+                                <connections>
+                                    <action selector="cancelTest5:" destination="Oai-gb-89X" eventType="touchUpInside" id="NDv-Bp-6Zu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAf-0r-xbc">
+                                <rect key="frame" x="20" y="342" width="335" height="34"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="获取队列中的操作"/>
+                                <connections>
+                                    <action selector="test5:" destination="Oai-gb-89X" eventType="touchUpInside" id="tfA-DS-H0I"/>
+                                    <action selector="test6:" destination="Oai-gb-89X" eventType="touchUpInside" id="kQJ-Dt-Ejr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2x-np-dVt">
+                                <rect key="frame" x="20" y="396" width="335" height="34"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="案例：下载并合成图片"/>
+                                <connections>
+                                    <action selector="downLoadImg:" destination="Oai-gb-89X" eventType="touchUpInside" id="BWY-cz-aeg"/>
+                                    <action selector="test5:" destination="Oai-gb-89X" eventType="touchUpInside" id="IIq-Tj-HCc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -811,17 +840,25 @@
                         <constraints>
                             <constraint firstItem="TrK-r3-0Ht" firstAttribute="top" secondItem="Uzk-hb-os4" secondAttribute="bottom" constant="20" id="1QS-O8-ifi"/>
                             <constraint firstItem="eaC-D2-3RB" firstAttribute="leading" secondItem="LoI-G1-7Sm" secondAttribute="leading" id="80V-U2-Pe0"/>
+                            <constraint firstItem="BRo-8S-k7q" firstAttribute="leading" secondItem="N3D-0W-tab" secondAttribute="leading" constant="20" id="8Nx-nI-pMD"/>
                             <constraint firstItem="TrK-r3-0Ht" firstAttribute="trailing" secondItem="LoI-G1-7Sm" secondAttribute="trailing" id="C3Y-bg-W5n"/>
                             <constraint firstItem="NYF-M5-KTy" firstAttribute="top" secondItem="eaC-D2-3RB" secondAttribute="bottom" constant="20" id="CFZ-JC-61x"/>
                             <constraint firstItem="NYF-M5-KTy" firstAttribute="trailing" secondItem="LoI-G1-7Sm" secondAttribute="trailing" id="FX3-jH-uM4"/>
                             <constraint firstItem="LoI-G1-7Sm" firstAttribute="leading" secondItem="N3D-0W-tab" secondAttribute="leading" constant="20" id="JI9-Hf-wnY"/>
+                            <constraint firstItem="NAf-0r-xbc" firstAttribute="leading" secondItem="N3D-0W-tab" secondAttribute="leading" constant="20" id="JJQ-g3-b7M"/>
                             <constraint firstItem="Uzk-hb-os4" firstAttribute="leading" secondItem="LoI-G1-7Sm" secondAttribute="leading" id="JYU-bV-MIk"/>
                             <constraint firstItem="NYF-M5-KTy" firstAttribute="leading" secondItem="LoI-G1-7Sm" secondAttribute="leading" id="JaF-Mc-Ag6"/>
                             <constraint firstItem="eaC-D2-3RB" firstAttribute="trailing" secondItem="LoI-G1-7Sm" secondAttribute="trailing" id="Kqn-i5-QXE"/>
                             <constraint firstItem="eaC-D2-3RB" firstAttribute="top" secondItem="LoI-G1-7Sm" secondAttribute="bottom" constant="20" id="O30-SY-OLt"/>
+                            <constraint firstItem="c2x-np-dVt" firstAttribute="top" secondItem="NAf-0r-xbc" secondAttribute="bottom" constant="20" id="Smv-OM-1oA"/>
+                            <constraint firstItem="BRo-8S-k7q" firstAttribute="top" secondItem="TrK-r3-0Ht" secondAttribute="bottom" constant="8" id="Y3g-Wc-uqT"/>
                             <constraint firstItem="LoI-G1-7Sm" firstAttribute="top" secondItem="N3D-0W-tab" secondAttribute="top" constant="30" id="ahJ-ol-QMC"/>
+                            <constraint firstItem="c2x-np-dVt" firstAttribute="leading" secondItem="N3D-0W-tab" secondAttribute="leading" constant="20" id="cYa-Cb-qfh"/>
                             <constraint firstItem="Uzk-hb-os4" firstAttribute="trailing" secondItem="LoI-G1-7Sm" secondAttribute="trailing" id="mLr-rc-FYs"/>
+                            <constraint firstItem="N3D-0W-tab" firstAttribute="trailing" secondItem="c2x-np-dVt" secondAttribute="trailing" constant="20" id="qvl-uV-F91"/>
+                            <constraint firstItem="N3D-0W-tab" firstAttribute="trailing" secondItem="NAf-0r-xbc" secondAttribute="trailing" constant="20" id="rzk-so-qig"/>
                             <constraint firstItem="N3D-0W-tab" firstAttribute="trailing" secondItem="LoI-G1-7Sm" secondAttribute="trailing" constant="20" id="tc1-EF-Gp0"/>
+                            <constraint firstItem="NAf-0r-xbc" firstAttribute="top" secondItem="BRo-8S-k7q" secondAttribute="bottom" constant="20" id="veA-Jf-2RV"/>
                             <constraint firstItem="Uzk-hb-os4" firstAttribute="top" secondItem="NYF-M5-KTy" secondAttribute="bottom" constant="20" id="wPL-oy-gDz"/>
                             <constraint firstItem="TrK-r3-0Ht" firstAttribute="leading" secondItem="LoI-G1-7Sm" secondAttribute="leading" id="wcd-rR-OC1"/>
                         </constraints>
@@ -830,7 +867,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4V5-wU-mZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2631" y="802"/>
+            <point key="canvasLocation" x="2629.5999999999999" y="801.94902548725645"/>
         </scene>
     </scenes>
 </document>
