@@ -7,6 +7,7 @@
 //
 
 #import "OperationOtherController.h"
+#import "OperationCaseController.h"
 
 @interface OperationOtherController ()
 
@@ -136,6 +137,10 @@
     NSBlockOperation * op3 = [NSBlockOperation blockOperationWithBlock:^{
         [NSThread sleepForTimeInterval:2.0];
         NSLog(@"操作三：1，%@",[NSThread currentThread]);
+        for (int i=0; i<10; i++) {
+            [NSThread sleepForTimeInterval:1.0];
+            NSLog(@"2: i=%d",i);
+        }
     }];
     [queue addOperation:op1];
     [queue addOperation:op2];
@@ -148,12 +153,15 @@
 }
 
 - (IBAction)test6:(id)sender {
+    NSLog(@"打印所有操作");
     
+    NSLog(@"%@",self.myQueue.operations);
 }
 
 //案例，下载两张图片并合成一张图
 - (IBAction)downLoadImg:(id)sender {
-    
+    OperationCaseController * vc = [OperationCaseController instance];
+    [self pushVC:vc];
 }
 
 @end
