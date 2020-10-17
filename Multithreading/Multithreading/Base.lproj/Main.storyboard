@@ -448,7 +448,44 @@
                     <view key="view" contentMode="scaleToFill" id="obk-gz-929">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSd-20-se8">
+                                <rect key="frame" x="20" y="40" width="335" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="创建并使用pThread"/>
+                                <connections>
+                                    <action selector="test1:" destination="H2y-SB-Qes" eventType="touchUpInside" id="y5e-2z-yPL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBm-zF-0KD">
+                                <rect key="frame" x="20" y="99" width="335" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="test2:" destination="H2y-SB-Qes" eventType="touchUpInside" id="3mM-K8-ava"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXi-lb-etE">
+                                <rect key="frame" x="20" y="158" width="335" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="test3:" destination="H2y-SB-Qes" eventType="touchUpInside" id="BMI-KA-cuA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LAl-6t-oZJ" firstAttribute="trailing" secondItem="AXi-lb-etE" secondAttribute="trailing" constant="20" id="5mU-gb-fTx"/>
+                            <constraint firstItem="pBm-zF-0KD" firstAttribute="leading" secondItem="LAl-6t-oZJ" secondAttribute="leading" constant="20" id="DUh-f1-gig"/>
+                            <constraint firstItem="AXi-lb-etE" firstAttribute="height" secondItem="oSd-20-se8" secondAttribute="height" id="GY7-9o-65U"/>
+                            <constraint firstItem="oSd-20-se8" firstAttribute="top" secondItem="LAl-6t-oZJ" secondAttribute="top" constant="40" id="a8X-Sj-nbo"/>
+                            <constraint firstItem="LAl-6t-oZJ" firstAttribute="trailing" secondItem="pBm-zF-0KD" secondAttribute="trailing" constant="20" id="gil-NY-1sD"/>
+                            <constraint firstItem="AXi-lb-etE" firstAttribute="top" secondItem="pBm-zF-0KD" secondAttribute="bottom" constant="25" id="jh7-rT-RgZ"/>
+                            <constraint firstItem="pBm-zF-0KD" firstAttribute="top" secondItem="oSd-20-se8" secondAttribute="bottom" constant="25" id="m34-fw-vDw"/>
+                            <constraint firstItem="oSd-20-se8" firstAttribute="leading" secondItem="LAl-6t-oZJ" secondAttribute="leading" constant="20" id="mCE-hR-4aH"/>
+                            <constraint firstItem="AXi-lb-etE" firstAttribute="leading" secondItem="LAl-6t-oZJ" secondAttribute="leading" constant="20" id="oNa-m4-FPn"/>
+                            <constraint firstItem="LAl-6t-oZJ" firstAttribute="trailing" secondItem="oSd-20-se8" secondAttribute="trailing" constant="20" id="ryo-RH-hY9"/>
+                            <constraint firstItem="pBm-zF-0KD" firstAttribute="height" secondItem="oSd-20-se8" secondAttribute="height" id="xYa-G7-o0h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LAl-6t-oZJ"/>
                     </view>
                 </viewController>
