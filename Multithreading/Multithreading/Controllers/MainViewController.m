@@ -45,6 +45,8 @@
     
 }
 
+- (IBAction)otherAction:(id)sender {
+}
 
 
 @end

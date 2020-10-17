@@ -12,6 +12,7 @@
 		3B3B6F10253697A700AEE8AE /* WMBXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B6F0F253697A700AEE8AE /* WMBXOperation.m */; };
 		3B3B6F1325383F3000AEE8AE /* OperationOtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B6F1225383F3000AEE8AE /* OperationOtherController.m */; };
 		3B5FE0DC252709330032AAA9 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5FE0DB252709330032AAA9 /* GCDTest.m */; };
+		3B741479253A8AC900CB8657 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B741478253A8AC900CB8657 /* OtherViewController.m */; };
 		3BBB29E92539986300885159 /* OperationCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB29E82539986300885159 /* OperationCaseController.m */; };
 		3BDA385B2526BB8600CD9532 /* GCDOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA385A2526BB8600CD9532 /* GCDOtherViewController.m */; };
 		3BDE6AC425172FD200EACE6C /* PThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE6AC325172FD200EACE6C /* PThreadViewController.m */; };
@@ -40,6 +41,8 @@
 		3B3B6F1225383F3000AEE8AE /* OperationOtherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationOtherController.m; sourceTree = "<group>"; };
 		3B5FE0DA252709330032AAA9 /* GCDTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
 		3B5FE0DB252709330032AAA9 /* GCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
+		3B741477253A8AC900CB8657 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		3B741478253A8AC900CB8657 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		3BBB29E72539986300885159 /* OperationCaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationCaseController.h; sourceTree = "<group>"; };
 		3BBB29E82539986300885159 /* OperationCaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationCaseController.m; sourceTree = "<group>"; };
 		3BDA38592526BB8600CD9532 /* GCDOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDOtherViewController.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				3BBB29E82539986300885159 /* OperationCaseController.m */,
 				3BDE6AC225172FD200EACE6C /* PThreadViewController.h */,
 				3BDE6AC325172FD200EACE6C /* PThreadViewController.m */,
+				3B741477253A8AC900CB8657 /* OtherViewController.h */,
+				3B741478253A8AC900CB8657 /* OtherViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				3B3B6F10253697A700AEE8AE /* WMBXOperation.m in Sources */,
 				3BF5B46224B1D06B0038A77F /* ThreadViewController.m in Sources */,
 				3BBB29E92539986300885159 /* OperationCaseController.m in Sources */,
+				3B741479253A8AC900CB8657 /* OtherViewController.m in Sources */,
 				3BDE6ADB25189DAF00EACE6C /* WMThread.m in Sources */,
 				3B3B6F0D2536979200AEE8AE /* WMCXOperation.m in Sources */,
 				3BF5B43E24B1CAE00038A77F /* AppDelegate.m in Sources */,
