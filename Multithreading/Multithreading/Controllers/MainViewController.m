@@ -11,6 +11,7 @@
 #import "GCDViewController.h"
 #import "OperationViewController.h"
 #import "PThreadViewController.h"
+#import "OtherViewController.h"
 
 @interface MainViewController ()
 
@@ -46,6 +47,8 @@
 }
 
 - (IBAction)otherAction:(id)sender {
+    OtherViewController * vc = [OtherViewController instance];
+    [self pushVC:vc];
 }
 
 
